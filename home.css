@@ -1,0 +1,64 @@
+
+#navegador {
+    background-image: linear-gradient(#ADD8E6 70%, #98FB98);
+}
+
+#navegador img {
+    height: 100px;
+}
+
+#container-1 .row {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#carrusel-2 img {
+    height: 400px;
+    width: 300px;
+    border-radius: 5%;
+}
+#container-1 {
+    padding: 2%;
+}
+
+#container-1 img {
+    width: 450px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+#container-1 img:hover {
+    scale: 1.1;
+}
+
+.footer {
+    background-image: linear-gradient(#ADD8E6 70%, #98FB98);
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+.footer a {
+    color: black;
+}
+
+
+#container-3 {
+    background-image: radial-gradient(#ADD8E6 70%, #98FB98 );
+    padding: 4%;
+}
+
+#contenedor-3 .row {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#container-3 img {
+    border-radius: 5%;
+
+}
+
+
+

@@ -1,0 +1,18 @@
+.footer {
+    background-image: linear-gradient(#ADD8E6 70%, #98FB98);
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+.footer a {
+    color: black;
+}
+
+#navegador {
+    background-image: linear-gradient(#ADD8E6 70%, #98FB98);
+}
+
+#navegador img {
+    height: 100px;
+}
