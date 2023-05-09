@@ -1,6 +1,6 @@
 
 #navegador {
-    background-image: linear-gradient(#ADD8E6 70%, #98FB98);
+    background-image: linear-gradient(#ADD8E6 100%, #98FB98);
 }
 
 #navegador img {
@@ -14,7 +14,7 @@
     text-align: center;
 }
 #carrusel-2 img {
-    height: 400px;
+    height: 450px;
     width: 300px;
     border-radius: 5%;
 }

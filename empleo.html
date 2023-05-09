@@ -10,7 +10,7 @@
     <script crossorigin="anonymous"
             integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
             src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <link href="home.css" type="text/css" rel="stylesheet">
+    <link href="empleo.css" type="text/css" rel="stylesheet">
     <title>Los Makinas.org</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
 </style>
 <header>
 <nav id="navegador" class="navbar navbar-expand-sm ">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-center">
             <a class="navbar-brand " href="home.html">
                     <img src="Makinas.png" alt="pagina Logo1" class="d-block w-100">
             </a>
@@ -68,67 +68,97 @@
             </div>
     </nav>
 </header>
-<div id="carrusel-2" class="carousel slide" data-bs-ride="carousel">
-    <div class="container-fluid ">
 
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carrusel-2" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#carrusel-2" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carrusel-2" data-bs-slide-to="2"></button>
+<div id="titulo" class="container d-flex justify-content-center p-4">
+    <h2>¡Consigue Tu Trabajo Ideal!</h2>
 
+</div>
+<hr>
+<div class="container-fluid d-flex justify-content-center mt-5">
+    <div class="row ">
+        <div class="col-sm-4">
+            <select class="form-select">
+                <option>¿Que tipo de Trabajo Buscas?</option>
+                <option>Administrativos</option>
+                <option>Operarios</option>
+                <option>Cajeros</option>
+                <option>Oficina</option>
+                <option>Otros...</option>
+            </select>
         </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Banner1.png" alt="Banner 1" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="Banner2.png" alt="Banner 2" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="Banner3.png" alt="Banner 3" class="d-block w-100">
+        <div class="col-sm-3">
+            <select class="form-select">
+                <option>¿Ciudad?</option>
+                <option>Santiago</option>
+                <option>Santiago Centro</option>
+                <option>La Reina</option>
+                <option>Estacion Central</option>
+                <option>Pudahuel</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                <label class="form-check-label">¿Cuentas con alguna Profesion?</label>
             </div>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-2" data-bs-slide="prev">
-
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carrusel-2" data-bs-slide="next">
-
-        </button>
+        <div class="col-sm-1">
+            <button class="btn btn-primary" type="submit">¡Buscar!</button>
+        </div>
     </div>
 </div>
-
-
-<div id="container-1" class="container-fluid mt-4">
+<hr>
+<div class="container-fluid mt-4 d-flex justify-content-center">
     <div class="row">
-        <div class=" col-sm-6 ">
-            <a href="charlas.html">
-                <img src="CHARLAS.png" alt="foto-1">
-            </a>
+        <div class="col-sm-6">
+            <div class="card" style="width:500px">
+                <img class="card-img-top" src="foto_banner.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Asistente Administrativo</h4>
+                    <p class="card-text">Como asistente administrativo, su función principal será brindar apoyo administrativo a la empresa y ayudar a las personas con discapacidad en el lugar de trabajo. Esto incluirá tareas como responder correos electrónicos, contestar llamadas telefónicas, archivar documentos, realizar tareas de procesamiento de datos y proporcionar apoyo a los miembros del equipo en sus tareas diarias.</p>
+                    <div class="d-flex justify-content-around">
+                        <a href="#" class="btn btn-primary">Ver Mas Informacion</a>
+                        <a href="#" class="btn btn-success">Postular</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="card" style="width:500px">
+                <img class="card-img-top" src="foto_banner.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Servicio al Cliente</h4>
+                    <p class="card-text"> Como agente de servicio al cliente, su función principal será brindar asistencia y atención al cliente para personas con discapacidad en nuestro centro de atención telefónica. Esto incluirá recibir llamadas de los clientes, responder preguntas, proporcionar información sobre los productos y servicios de la empresa, y brindar soporte técnico a los clientes que requieran asistencia en el uso de nuestra tecnología.</p>
+                    <div class="d-flex justify-content-around">
+                        <a href="#" class="btn btn-primary">Ver Mas Informacion</a>
+                        <a href="#" class="btn btn-success">Postular</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="col-sm-6 ">
-            <a href="empleo.html">
-                <img src="EMPLEOS.png" alt="foto-3">
-            </a>
-        </div>
-
-    </div>
-</div>
-<div id="container-3" class="container-fluid mt-1">
-    <div class="row">
-        <div class="col-sm-5">
-            <h2>CUENTA CON NOSOTROS, MAKINA!</h2>
-            <br>
-            <span>Amamos ayudar a todas las personas y queremos entregar lo mejor para ellos. </span>
-            <p></p>
-            <span>Hemos seleccionado cuidadosamente a las personas con las que trabajamos para entregar la mejor ayuda y accesibles a todas las personas. Los invitamos a descubrir el mundo de MAKINAS.ORG, seguirnos en redes sociales y conocer todos los beneficios que poseen las personas con Capacidades Diversas.</span>
-            <p></p>
-
-        </div>
-        <div class="col-sm-7">
-            <img src="foto_banner.jpg" alt="perrito" width="450px" height="300px" class="d-block w-100">
+        <div class="col-sm-6">
+            <div class="card" style="width:500px">
+                <img class="card-img-top" src="foto_banner.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Analista de Datos</h4>
+                    <p class="card-text">Como analista de datos, su función principal será recolectar, analizar y presentar información de manera efectiva para apoyar la toma de decisiones de la empresa. Trabajará en estrecha colaboración con otros miembros del equipo para analizar grandes conjuntos de datos y presentar resultados precisos y claros que apoyen las metas empresariales.</p>
+                    <div class="d-flex justify-content-around">
+                        <a href="#" class="btn btn-primary">Ver Mas Informacion</a>
+                        <a href="#" class="btn btn-success">Postular</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="card" style="width:500px">
+                <img class="card-img-top" src="foto_banner.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Auxiliar de Archivo</h4>
+                    <p class="card-text">  Como auxiliar de archivo, su función principal será ayudar en la organización y mantenimiento de los documentos de la empresa. Usted será responsable de clasificar, archivar y catalogar documentos en un sistema organizado y eficiente. También deberá asegurarse de que la información sea precisa y esté actualizada en todo momento.</p>
+                    <div class="d-flex justify-content-around">
+                        <a href="#" class="btn btn-primary">Ver Mas Informacion</a>
+                        <a href="#" class="btn btn-success">Postular</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -231,8 +261,6 @@
     </div>
     <!-- Copyright -->
 </footer>
-
-
 
 <script crossorigin="anonymous"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
