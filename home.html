@@ -11,6 +11,7 @@
             integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
             src="https://code.jquery.com/jquery-3.6.4.js"></script>
     <link href="home.css" type="text/css" rel="stylesheet">
+    <script src="js.js"></script>
     <title>Los Makinas.org</title>
 </head>
 <body>
@@ -37,19 +38,19 @@
                         <a class="nav-link" href="home.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="charlas.html">Charlas</a>
+                        <button class="nav-link" onclick="cambioHtml('charlas')">Charlas</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="empleo.html">Empleos</a>
+                        <button class="nav-link" onclick="cambioHtml('empleo')">Empleo</button>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <button class="nav-link" onclick="cambioHtml('login')">Login</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registrarme.html">Registrarme</a>
+                        <button class="nav-link" onclick="cambioHtml('registrarme')">Registrarme</button>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#">Ayuda</a>
@@ -68,71 +69,76 @@
             </div>
     </nav>
 </header>
-<div id="carrusel-2" class="carousel slide" data-bs-ride="carousel">
-    <div class="container-fluid ">
+<div id="contenido">
+    <div id="carrusel-2" class="carousel slide" data-bs-ride="carousel">
+        <div class="container-fluid ">
 
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carrusel-2" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#carrusel-2" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carrusel-2" data-bs-slide-to="2"></button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel-2" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carrusel-2" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carrusel-2" data-bs-slide-to="2"></button>
+
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Banner1.png" alt="Banner 1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="Banner2.png" alt="Banner 2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="Banner3.png" alt="Banner 3" class="d-block w-100">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-2" data-bs-slide="prev">
+
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel-2" data-bs-slide="next">
+
+            </button>
+        </div>
+    </div>
+
+
+    <div id="container-1" class="container-fluid mt-4">
+        <div class="row">
+            <div class=" col-sm-6 ">
+                <button class="nav-link" onclick="cambioHtml('charlas')">
+                    <img src="CHARLAS.png" alt="foto-1">
+                </button>
+            </div>
+
+            <div class="col-sm-6 ">
+                <button class="nav-link" onclick="cambioHtml('empleo')">
+                    <img src="EMPLEOS.png" alt="foto-3">
+                </button>
+            </div>
 
         </div>
+    </div>
+    <div id="container-3" class="container-fluid mt-1">
+        <div class="row">
+            <div class="col-sm-5">
+                <h2>CUENTA CON NOSOTROS, MAKINA!</h2>
+                <br>
+                <span>Amamos ayudar a todas las personas y queremos entregar lo mejor para ellos. </span>
+                <p></p>
+                <span>Hemos seleccionado cuidadosamente a las personas con las que trabajamos para entregar la mejor ayuda y accesibles a todas las personas. Los invitamos a descubrir el mundo de MAKINAS.ORG, seguirnos en redes sociales y conocer todos los beneficios que poseen las personas con Capacidades Diversas.</span>
+                <p></p>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Banner1.png" alt="Banner 1" class="d-block w-100">
             </div>
-            <div class="carousel-item">
-                <img src="Banner2.png" alt="Banner 2" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="Banner3.png" alt="Banner 3" class="d-block w-100">
+            <div class="col-sm-7">
+                <img src="foto_banner.jpg" alt="perrito" width="450px" height="300px" class="d-block w-100">
             </div>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-2" data-bs-slide="prev">
-
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carrusel-2" data-bs-slide="next">
-
-        </button>
     </div>
 </div>
 
-
-<div id="container-1" class="container-fluid mt-4">
-    <div class="row">
-        <div class=" col-sm-6 ">
-            <a href="charlas.html">
-                <img src="CHARLAS.png" alt="foto-1">
-            </a>
-        </div>
-
-        <div class="col-sm-6 ">
-            <a href="empleo.html">
-                <img src="EMPLEOS.png" alt="foto-3">
-            </a>
-        </div>
-
-    </div>
+<div id="contenido2">
+  <!-- aquí se cargará el contenido dinámicamente -->
 </div>
-<div id="container-3" class="container-fluid mt-1">
-    <div class="row">
-        <div class="col-sm-5">
-            <h2>CUENTA CON NOSOTROS, MAKINA!</h2>
-            <br>
-            <span>Amamos ayudar a todas las personas y queremos entregar lo mejor para ellos. </span>
-            <p></p>
-            <span>Hemos seleccionado cuidadosamente a las personas con las que trabajamos para entregar la mejor ayuda y accesibles a todas las personas. Los invitamos a descubrir el mundo de MAKINAS.ORG, seguirnos en redes sociales y conocer todos los beneficios que poseen las personas con Capacidades Diversas.</span>
-            <p></p>
-
-        </div>
-        <div class="col-sm-7">
-            <img src="foto_banner.jpg" alt="perrito" width="450px" height="300px" class="d-block w-100">
-        </div>
-    </div>
-</div>
-
 <footer class=" footer">
     <!-- Grid container -->
     <div class="container p-4">
